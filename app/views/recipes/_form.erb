@@ -4,7 +4,13 @@
   <br>
   
   <%= f.fields_for :ingredients do |i_f| %>
-  
+    <%= i_f.label :name %><br>
+    <%= i_f.text_field :name %>
+    <br>
+    
+    <%= i_f.label :quantity %><br>
+    <%=i_f.text_field :quantity %>
+    <br>
   <% end %>
   
   <% f.submit %>
